@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장현주 포트폴리오</title>
     <link rel="stylesheet" href="./css/index.css" type="text/css">
+    <link rel= "icon" type="image/png" href= "./images/favi.png"> 
 </head>
 <body>
     <!-- 헤더 -->
     <header>
         <h1><a href="./index.html" title="메인페이지바로가기">
             <img src="./images/logo_000.png" alt="로고">
-            <div class="home">intro</div>
+            <span class="home">intro</span>
         </a></h1>
     </header>
 
     <!-- 메인 -->
     <main>
-        <div class="back_img">
-            <div></div>
-            <div>
-                <div class="vector_ani">
-                    <svg width="1920" height="298" viewBox="0 0 1920 298" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M-0.998333 3.99541H-1C143.822 3.45783 283.917 64.8762 343 287.132C366.667 232.632 440 124.133 544 126.133C648 128.133 715.333 234.299 736 287.132C764.333 237.632 845 129.033 941 90.6325C1061 42.6325 1147.5 71.1325 1200.5 98.6325C1253.5 126.133 1329 188.632 1355 296.132C1363.33 264.299 1394.54 210.306 1457.5 216.133C1515.5 221.5 1538.33 274.632 1540 296.132C1558.5 209.632 1624.5 -1.50003 1920 3.99997" stroke="black" stroke-width="7"/>
-                    </svg>
+        <div id="intro">
+            <div class="back_img">
+                <div></div>
+                <div>
+                    <div class="vector_ani">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1920" height="298" fill="none">
+                            <path stroke="#000" stroke-width="7" d="M-1 4c145-1 285 61 344 283 24-54 97-163 201-161s171 108 192 161c28-49 109-158 205-196 120-48 207-20 260 8 53 27 128 90 154 197 8-32 40-86 103-80 58 6 80 59 82 80 19-86 85-298 380-292"/>
+                        </svg>
+                    </div>
                 </div>
             </div>
-        </div>
             <!-- 인트로 -->
             <section class="intro">
+                <h2 class="h2_none">인트로</h2>
                 <nav>
                     <ul>
                         <li><a href="#profile_menu"><div class="menu">profile</div></a></li>
@@ -36,10 +39,7 @@
                         <li><a href="#uiux_menu"><div class="menu">UI/UX</div></a></li>
                     </ul>
                 </nav>
-
                 <h2>PORTFOLIO</h2>
-
-                
                 <div class="intro_left">
                     <img src="./images/intro_img.png" alt="">
                     <p>반갑습니다 !</p>
@@ -52,18 +52,15 @@
                         JU
                     </p>
                     <p class="smile">:)</p>
-                    
                 </div>
-
-
             </section>
-
-
+        </div>
         <!-- 프로필 -->
         <section class="profile" id="profile_menu">
+            <h2 class="h2_none">프로필</h2>
             <div>
                 <div class="show1">
-                    <h3>
+                    <div class="profile_title">
                         <div id="good">
                             <span>
                                 GOOD <br>DESIGN<br>
@@ -74,11 +71,9 @@
                         신입<br>
                         <span id="under">웹퍼블리셔</span><br>
                         <span id="name">장현주</span>입니다 !
-                    </h3>
+                    </div>
                     <img src="./images/book.png" alt="책" id="book">
-
                 </div>
-                <!-- <img src="./images/produceimg.png" alt="이모지" id="emo"> -->
             </div>
             <ul>
                 <li class="subtitle">INTRODUCE
@@ -86,9 +81,9 @@
                         <li><span id="name2">장현주</span> &#124; 1997-03-15</li>
                         <li>
                             <ul class="keyword">
-                                <li>긍정적</li>
-                                <li>끈기</li>
-                                <li>최선을 다하는</li>
+                                <li>긍정적이고</li>
+                                <li>끈기있게</li>
+                                <li>최선을 다하는 !</li>
                             </ul>
                         </li>
                     </ul>
@@ -116,51 +111,26 @@
                         <li>SASS</li>
                         <li>JavaScript</li>
                         <li>jQuery</li>
+                        <li>Bootstrap</li>
                     </ul>
                 </li>
             </ul>
         </section>
-
         <!-- 프로젝트 -->
         <section class="project" id="project_menu">
+            <h2 class="h2_none">프로젝트</h2>
             <div class="slide">
-
                 <div class="list_intro">
-                    <!-- <div>
-                        <div class="ex">
-                            <h3>프로젝트를<br>소개합니다 !</h3>
-                            <p>
-                                <br><br><br><br>
-                                각 프로젝트는<br>제가 직접 기획하고<br>디자인하여 코드로 구현한<br>작업물입니다<br>
-                                이 곳에서 저의 웹개발 역량과<br>디자인 능력을 확인해보세요 !
-                            </p>
-                        </div>
-                        <div class="eximg img01">
-                            <img src="./images/ui_kartell.png" alt="" >
-                        </div>
+                    <div class="pro_ani">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="648" height="118" fill="none">
+                            <path stroke="#6DED6D" stroke-width="5" d="M646 59c0 3-2 6-6 10s-10 7-18 11c-17 7-40 13-69 18-59 11-140 18-229 18s-170-7-229-18c-29-5-52-11-69-18-8-4-14-7-18-11s-5-7-5-10 1-6 5-10 10-7 18-11c17-7 40-13 69-18C154 9 235 3 324 3s170 6 229 17c29 5 52 11 69 18 8 4 14 7 18 11s6 7 6 10Z"/>
+                        </svg>
+                        <svg class="img02" xmlns="http://www.w3.org/2000/svg" width="648" height="202" fill="none">
+                            <path stroke="#6DED6D" stroke-width="5" d="M646 59c0 3-2 6-6 10s-10 7-18 11c-17 7-40 13-69 18-59 11-140 18-229 18s-170-7-229-18c-29-5-52-11-69-18-8-4-14-7-18-11s-5-7-5-10 1-6 5-10 10-7 18-11c17-7 40-13 69-18C154 9 235 3 324 3s170 6 229 17c29 5 52 11 69 18 8 4 14 7 18 11s6 7 6 10Z"/>
+                            <path stroke="#6DED6D" stroke-width="5" d="M646 143c0 3-2 6-6 10s-10 7-18 11c-17 7-40 13-69 18-59 11-140 18-229 18s-170-7-229-18c-29-5-52-11-69-18-8-4-14-7-18-11s-5-7-5-10 1-6 5-10 10-7 18-11c17-7 40-13 69-18 59-11 140-17 229-17s170 6 229 17c29 5 52 11 69 18 8 4 14 7 18 11s6 7 6 10Z"/>
+                        </svg>
+                        <div class="pro_circle"></div>
                     </div>
-                    <div>
-                        <div class="eximg img02">
-                            <img src="./images/ui_guess.png" alt="">
-                        </div>
-                        <div class="ex">
-                            <p>
-                                제작된 페이지는 모두<br>사용자 경험을 중심으로<br>설계되었으며,<br>
-                                반응형 및<br>사용자 친화적 디자인을<br>지향합니다 !
-                            </p>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="ex ex3">
-                            <p>                                
-                                저의 열정이 담긴 프로젝트를 살펴보시고,
-                                결과물에 대한 <br>피드백이나 질문은<br>언제든지 환영합니다 :)
-                            </p>
-                        </div>
-                        <div class="eximg img03">
-                            <img src="./images/ui_chaum.png" alt="">
-                        </div>
-                    </div> -->
                     <h3>프로젝트를<br>소개합니다 !</h3>
                     <p>
                         안녕하세요!  <br>
@@ -173,9 +143,8 @@
                         결과물에 대한 피드백이나 질문은 언제든지 환영합니다 <br>
                         읽어주셔서 감사합니다 !
                     </p>
-                        <div id="tri"></div>
+                    <div id="tri"></div>
                 </div>
-
                 <div class="list_wrap">
                     <dl class="list">
                         <dt class="list_tag">채움우유</dt>
@@ -189,21 +158,20 @@
                                     <img src="./images/pc1.png" alt="pc목업">
                                 </div>
                                 <ul class="list_right">
-                                    <li>제작기간 : 2023-09-18</li>
+                                    <li>제작기간 :<br>2023.09.14 - 2023.10.12. (1개월) </li>
                                     <li>프로젝트 기여도: 100%</li>
                                     <li>사용프로그램:
                                         <ul class="tool_wrap">
                                             <li>HTML</li>
                                             <li>CSS</li>
                                             <li>JS</li>
-                                            <li>JQUERY</li>
+                                            <li>Jquery</li>
                                         </ul>
                                     </li>
                                     <li><a href="" title="프로젝트 기획서" class="p_btn">프로젝트 기획서</a></li>
                                     <li><a href="" title="프로젝트 사이트" class="p_btn">프로젝트 사이트</a></li>
                                 </ul>
                             </div>
-
                         </dd>
                     </dl>
                     <dl class="list">
@@ -217,21 +185,19 @@
                                     <img src="./images/pc2.png" alt="pc목업">
                                 </div>
                                 <ul class="list_right">
-                                    <li>제작기간 : 2023-09-18</li>
+                                    <li>제작기간 :<br>2023.10.13. - 2023.11.30.(1개월 17일) </li>
                                     <li>프로젝트 기여도: 100%</li>
                                     <li>사용프로그램:
                                         <ul class="tool_wrap">
                                             <li>HTML</li>
                                             <li>CSS</li>
                                             <li>JS</li>
-                                            <li>JQUERY</li>
                                         </ul>
                                     </li>
                                     <li><a href="" title="프로젝트 기획서" class="p_btn">프로젝트 기획서</a></li>
                                     <li><a href="" title="프로젝트 사이트" class="p_btn">프로젝트 사이트</a></li>
                                 </ul>
                             </div>
-
                         </dd>
                     </dl>
                     <dl class="list">
@@ -245,21 +211,20 @@
                                     <img src="./images/pc3.png" alt="pc목업">
                                 </div>
                                 <ul class="list_right">
-                                    <li>제작기간 : 2023-09-18</li>
+                                    <li>제작기간 : <br>2023.12.01. - 2024.01.11. (1개월 10일)</li>
                                     <li>프로젝트 기여도: 100%</li>
                                     <li>사용프로그램:
                                         <ul class="tool_wrap">
                                             <li>HTML</li>
                                             <li>CSS</li>
                                             <li>JS</li>
-                                            <li>JQUERY</li>
+                                            <li>Jquery</li>
                                         </ul>
                                     </li>
                                     <li><a href="" title="프로젝트 기획서" class="p_btn">프로젝트 기획서</a></li>
-                                    <li><a href="" title="프로젝트 사이트" class="p_btn">프로젝트 사이트</a></li>
+                                    <li><a href="https://juo3o.github.io/guess/" title="프로젝트 사이트" class="p_btn">프로젝트 사이트</a></li>
                                 </ul>
                             </div>
-
                         </dd>
                     </dl>
                     <dl class="list">
@@ -273,28 +238,26 @@
                                     <img src="./images/pc4.png" alt="pc목업">
                                 </div>
                                 <ul class="list_right">
-                                    <li>제작기간 : 2023-09-18</li>
+                                    <li>제작기간 : <br>2024.01.12. - 2024.02.07. (1개월)</li>
                                     <li>프로젝트 기여도: 100%</li>
                                     <li>사용프로그램:
                                         <ul class="tool_wrap">
                                             <li>HTML</li>
                                             <li>CSS</li>
                                             <li>JS</li>
-                                            <li>JQUERY</li>
+                                            <li>Jquery</li>
                                         </ul>
                                     </li>
                                     <li><a href="" title="프로젝트 기획서" class="p_btn">프로젝트 기획서</a></li>
-                                    <li><a href="" title="프로젝트 사이트" class="p_btn">프로젝트 사이트</a></li>
+                                    <li><a href="https://juo3o.github.io/Kartell/" title="프로젝트 사이트" class="p_btn">프로젝트 사이트</a></li>
                                 </ul>
                             </div>
                         </dd>
                     </dl>
                 </div>
-
             </div>
             <div class="hidden"></div>
         </section>
-
         <!-- uiux디자인 -->
         <section class="uiux" id="uiux_menu">
             <h2 class="uiux_title">UIUX<br>DESIGN</h2>
@@ -302,75 +265,65 @@
             <div class="lineBox2"></div>
             <div class="box">
                 <ul class="boxIn">
-                    <li>03 나이키
+                    <li>03 BRAND
                         <div class="uiux01">
                             <img src="./images/nike_mockup3.png" alt="나이키목업">
                             <span class="card">
                                 나이키 모바일 앱 디자인<br><br>
-                                제작기간 : <br>
-                                사용프로그램 : <br>
-                                <a href="">FIGMA</a>
+                                제작기간 : 2023.09.(3일)<br>
+                                사용프로그램 : Figma &#47; illustrator &#47; Photoshop<br>
+                                <a href="" title="">FIGMA</a>
                             </span>
                         </div>
                     </li>
-                    <li>04 나이키
+                    <li>04 BRAND
                         <div class="uiux01">
                             <img src="./images/nike_mockup4.png" alt="나이키목업">
                             <span class="card">
                                 나이키 모바일 앱 디자인<br><br>
-                                제작기간 : <br>
-                                사용프로그램 : <br>
-                                <a href="">FIGMA</a>
+                                제작기간 : 2023.09.(3일)<br>
+                                사용프로그램 : Figma &#47; illustrator &#47; Photoshop<br>
+                                <a href="" title="">FIGMA</a>
                             </span>
                         </div>
                     </li>
-                    <li>05 나이키
+                    <li>05 BRAND
                         <div class="uiux01">
                             <img src="./images/nike_mockup5.png" alt="나이키목업">
                             <span class="card">
                                 나이키 모바일 앱 디자인<br><br>
-                                제작기간 : <br>
-                                사용프로그램 : <br>
-                                <a href="">FIGMA</a>
+                                제작기간 : 2023.09.(3일)<br>
+                                사용프로그램 : Figma &#47; illustrator &#47; Photoshop<br>
+                                <a href="" title="">FIGMA</a>
                             </span>
                         </div>
                     </li>
-                    <!-- <li>UIUX디자인
-                    <div class="uiux01">
-                        <img src="./images/nike_mockup_none.png" alt="나이키목업">
-                        <span class="card">
-
-                        </span>
-                    </div>
-                    </li> -->
-                    <li>01 나이키
+                    <li>01 NIKE
                         <div class="uiux01">
                             <img src="./images/nike_mockup.png" alt="나이키목업">
                             <span class="card">
                                 나이키 모바일 앱 디자인<br><br>
-                                제작기간 : <br>
-                                사용프로그램 : <br>
-                                <a href="">FIGMA</a>
+                                제작기간 : 2023.09.(3일)<br>
+                                사용프로그램 : Figma &#47; illustrator &#47; Photoshop<br>
+                                <a href="" title="">FIGMA</a>
                             </span>
                         </div>
                     </li>
-                    <li>02 나이키
+                    <li>02 BRAND
                         <div class="uiux01">
                             <img src="./images/nike_mockup2.png" alt="나이키목업">
                             <span class="card">
                                 나이키 모바일 앱 디자인<br><br>
-                                제작기간 : <br>
-                                사용프로그램 : <br>
-                                <a href="">FIGMA</a>
+                                제작기간 : 2023.09.(3일)<br>
+                                사용프로그램 : Figma &#47; illustrator &#47; Photoshop<br>
+                                <a href="" title="">FIGMA</a>
                             </span>
                         </div>
                     </li>
                 </ul>
-    
             </div>
         </section>
     </main>
-
     <!-- 푸터 -->
     <footer>
         <section class="end">
@@ -384,226 +337,29 @@
                 <p>이 페이지는 해상도 1920*768px에 최적화되어 있습니다.</p>
                 <p>제작된 사이트는 웹표준, 웹접근성을 준수합니다. </p>
                 <p>리뉴얼 사이트는 상업적 용도가 아닌 개인 포트폴리오 용으로 제작되었습니다.</p>
-                <p>copyright©2024 allrights reserved.</p>
+                <p>copyright&copy;2024 juo3o all rights reserved.</p>
             </address>
             <div>
+                <p>contect me :)</p>
                 <img src="./images/f_photo.png" alt="">
                 <img src="./images/f_sns.png" alt="" class="f_sns">
                 <ul class="sns_wrap">
-                    <li><a href="mailto:juo3o@naver.com" title=""><img src="./images/mail.png" alt="메일" class="mail"></a></li>
+                    <li class="mail"><a href="mailto:juo3o@naver.com" title=""  ><img src="./images/mail.png" alt="메일"></a></li>
                     <li><a href="tel:010-8804-4500" title=""><img src="./images/call.png" alt="전화" class="call"></a></li>
                     <li><a href="https://github.com/juo3o" title=""><img src="./images/github.png" alt="깃허브" class="github"></a></li>
-                    <li><a href="https://github.com/juo3o" title=""><img src="./images/github.png" alt="깃허브" class="github"></a></li>
+                    <li><a href="https://www.notion.so/baafe599a56f4fc1ab528dad34f7a3ce?v=d62f55064cce4030b853d34e69e13540" title=""><img src="./images/notion.png" alt="깃허브" class="github"></a></li>
                 </ul>
-    
+                <ul class="sns_txt">
+                    <li class="txt txt01">juo3o@naver.com</li>
+                    <li class="txt txt02">010-8804-4500</li>
+                    <li class="txt txt03">https://juo3o.github.io/</li>
+                    <li class="txt txt04">https://www.notion.so/</li>
+                </ul>
             </div>
-
         </section>
     </footer>
-
-        <!-- 제이쿼리 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>
-
-
-
-
-        $(document).ready(function(){
-
-            //인트로 소개박스 애니메이션
-
-            var scrollElements = ['.scroll_1', '.scroll_2', '.scroll_3'];
-            var currentElementIndex = 0;
-
-            // 첫 번째 요소를 활성화
-            $(scrollElements[currentElementIndex]).addClass('active');
-
-            // 요소를 순차적으로 활성화/비활성화하는 함수
-            function activateNextElement() {
-                // 현재 활성화된 요소를 비활성화
-                $(scrollElements[currentElementIndex]).removeClass('active');
-                // 다음 요소가 없으면 첫 번째 요소로 돌아감
-                currentElementIndex = (currentElementIndex + 1) % scrollElements.length;
-                // 다음 요소를 활성화
-                $(scrollElements[currentElementIndex]).addClass('active');
-            }
-            setInterval(activateNextElement, 2000);
-
-
-
-
-
-        //uiux 디자인 목록 자동 롤 순위
-            let Roll = ()=> {
-                    $('.boxIn li:first').appendTo($('.boxIn')).show(300);
-                    $('.boxIn li:nth-child(3)').siblings().find('.uiux01').css('display', 'none');
-                    $('.boxIn li:nth-child(3)').find('.uiux01').css('display', 'block');               
-            }
-
-            // 초기 호출
-            Roll();
-
-            // 호버 시 롤링 멈춤
-            $('.uiux01').hover(
-                function() {
-                    clearInterval(interval);
-                },
-                function() {
-                    interval = setInterval(function() {
-                        $('.boxIn li:first').hide(300, Roll);
-                    }, 3000);
-                }
-            );
-
-            // 이미지에 호버 시 카드 뒤집히는 애니메이션 추가
-            $('.uiux01 img').mouseenter(function() {
-                var $card = $(this).siblings('.card');
-                if (!$card.hasClass('flipped')) {
-                    $card.addClass('flipped');
-                    $(this).addClass('flipped2');
-                    // .card 영역에서의 mouseenter 이벤트를 한 번만 실행하도록 설정
-                    $card.one('mouseenter', function() {
-                        return false; // 이벤트를 막음
-                    });
-                }
-            });
-
-            // 영역 안에 있을 때 뒤집기 멈춤
-            $('.uiux01').mouseleave(function() {
-                $('.card').removeClass('flipped');
-                $('.uiux01 img').removeClass('flipped2');
-            });
-
-
-
-
-            // //아코디언메뉴 함수
-            $('.list_tag').click(function(){
-
-                //0이면 없애기..
-                // if($('.list').offset().left=='0'){
-                //     $('.list_tag').removeClass('on_tag');
-                // }else{
-                //     $(this).addClass('on_tag'); 
-                // } 
-
-                //클릭하면 on_tag에 class
-                // if($(this).hasClass('on_tag')==false){
-                //     $('.list_tag').addClass('on_tag');
-                // }else{
-                //     $('.list_tag').removeClass('on_tag');
-                // }
-
-                var $parentList = $(this).parent(); // 클릭된 .list의 부모 요소인 .list_wrap
-
-                var currentLeft = $parentList.css('left');
-
-                if (currentLeft === '0px') {
-                    $parentList.animate({ left: '-1190px' }, 300); // 왼쪽으로 이동
-                } else { 
-                    $parentList.animate({ left: '0px' }, 300); // 원래 위치로 이동
-                }
-
-
-                // 클릭한 .list_tag 요소에만 .on_tag 클래스 추가
-                $(this).addClass('on_tag').parent().siblings().find('.list_tag').removeClass('on_tag');
-
-                // 현재 클릭된 .list를 제외한 다른 .list 요소의 .on_tag 클래스 제거
-                $parentList.siblings().find('.list_tag').removeClass('on_tag');
-
-                // 현재 클릭된 .list를 제외한 다른 .liste 닫기
-                $parentList.siblings().animate({ left: '0px' }, 300);
-
-
-                // 클릭한 .list 요소를 기준으로 이전 .list 요소를 toggle
-                var $clickedIndex = $parentList.index();
-                $parentList.prevAll('.list').each(function(index) {
-                    if (index < $clickedIndex) {
-                        $(this).animate({ left: '-1190px' }, -100); // 왼쪽이동
-                    } else {
-                        return false; 
-                    }
-                });
-
-                // 클릭한 .list 요소를 기준으로 이후 .list 요소를 toggle
-                $parentList.nextAll('.list').each(function(index) {
-                    if (index <= $clickedIndex) {
-                        return false; 
-                    } else {
-                        $(this).animate({ left: '0px' }, 300); // 원래 위치
-                    }
-                });
-
-                
-            });
-
-            //스크롤시 메뉴 색상 변경...
-            $(window).scroll(function () { 
-                var scrollValue = $(document).scrollTop(); 
-                console.log(scrollValue); 
-
-
-                if (scrollValue==0) {
-                    $('header').css('opacity','0'); /*로고*/
-                } else {
-                    $('header').css('opacity','1');
-                }
-                if (scrollValue >= 890 && scrollValue < 1500) {
-                    $('.intro nav ul li:first-child .menu').addClass('show');
-                    $('#name').addClass('active'); /*형광펜*/
-                } else {
-                    $('.intro nav ul li:first-child .menu').removeClass('show');
-                    $('#name').removeClass('active');/*형광펜*/
-                }
-
-                if (scrollValue >= 1780 && scrollValue < 2500) {
-                    $('.intro nav ul li:nth-child(2) .menu').addClass('show');
-                } else {
-                    $('.intro nav ul li:nth-child(2) .menu').removeClass('show');
-                }
-
-                if (scrollValue >= 2670 && scrollValue < 3000) {
-                    $('.intro nav ul li:last-child .menu').addClass('show');
-                } else {
-                    $('.intro nav ul li:last-child .menu').removeClass('show');
-                }
-            });
-        });
-
-        //원페이지스크롤이벤트
-        window.addEventListener("wheel", function(e){
-            e.preventDefault();
-        },{passive : false});
-
-        var $html = $("html");
-        var page = 1;
-        var lastPage = $("section").length;
-
-        //scroll animation time
-        // var timeScrollAnimation = 750;
-        var timeScrollAnimation = 100;
-
-        $html.animate({scrollTop:0},10);
-
-        $(window).on("wheel", function(e){
-        
-            if($html.is(":animated")) return;
-        
-            if(e.originalEvent.deltaY > 0){
-                if(page== lastPage) return;
-        
-                page++;
-            }else if(e.originalEvent.deltaY < 0){
-                if(page == 1) return;
-        
-                page--;
-            }
-            
-            var posTop = (page-1) * ($(window).height());
-        
-            $html.animate({scrollTop : posTop}, timeScrollAnimation);
-        
-        });
-    </script>
+    <!-- 제이쿼리 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="./script/index.js"></script>
 </body>
 </html>
