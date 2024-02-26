@@ -66,7 +66,8 @@ $color_main:#6DED6D;
         top: 39px; left: 40px;
         border-radius: 50px;
         transition: 0.2s;    
-        z-index: 6;    
+        z-index: 6;  
+        cursor: default;  
     }
 //메인
     main section, .end{ @include page_width; border: 0px solid transparent;}
@@ -99,6 +100,7 @@ $color_main:#6DED6D;
         transform: translate(-1px,-1px);
         transition: 0.3s;
         color: transparent;
+        cursor: default;
     }
     .show {width: 120px; color: $color01; background: $color_main;}
     .intro h2{
@@ -213,7 +215,7 @@ $color_main:#6DED6D;
         z-index: 1;
         overflow: hidden;
     }
-    .profile .skill_wrap li:hover{color: rgba(251, 105, 105, 0);}//기존 텍스트 숨기기
+    .profile .skill_wrap li:hover{color: rgba(251, 105, 105, 0); cursor: default;}//기존 텍스트 숨기기
 //hover이벤트 70%, 50% 넣기
     .profile .skill_wrap li:after{
         position: absolute;
@@ -309,7 +311,7 @@ $color_main:#6DED6D;
         left: -106px; top: 700px;
         transition: 0.3s;
     }
-    .list_tag:hover{background: $color01;color: $color_main;}//hover css
+    .list_tag:hover{background: $color01;color: $color_main; cursor: default;}//hover css
     .on_tag{background: $color01;color: $color_main;}//page css
     .jeju{top: 550px;}
     .guess{top: 500px;}
@@ -373,6 +375,7 @@ $color_main:#6DED6D;
     .boxIn { margin-top: 330px; position: relative; left: -100px;}
     //순위 제목
     .boxIn li {width: 50%; font-size: $fontSize_scroll02; text-align: center;}
+    .boxIn li:hover{cursor: default;}
     .boxIn > li:nth-child(3){
         font-size: $fontSize_scroll01;
         //글자 테두리

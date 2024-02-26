@@ -78,6 +78,7 @@ header .home {
   border-radius: 50px;
   transition: 0.2s;
   z-index: 6;
+  cursor: default;
 }
 
 main section, .end {
@@ -137,6 +138,7 @@ main section, .end {
   transform: translate(-1px, -1px);
   transition: 0.3s;
   color: transparent;
+  cursor: default;
 }
 
 .show {
@@ -395,6 +397,7 @@ main section, .end {
 
 .profile .skill_wrap li:hover {
   color: rgba(251, 105, 105, 0);
+  cursor: default;
 }
 
 .profile .skill_wrap li:after {
@@ -545,6 +548,7 @@ main section, .end {
 .list_tag:hover {
   background: #1c1c1c;
   color: #6DED6D;
+  cursor: default;
 }
 
 .on_tag {
@@ -694,6 +698,10 @@ main section, .end {
   width: 50%;
   font-size: 50px;
   text-align: center;
+}
+
+.boxIn li:hover {
+  cursor: default;
 }
 
 .boxIn > li:nth-child(3) {
